@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title dir="ltr">Space Tourism Agency of Roswell</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/nav.css">
+  </head>
+
+  <body class="opening hide-UI view-2D zoom-large data-close controls-close">
+    <nav class="nav">
+      <div class="container">
+          <div class="logo">
+              <a href="#" class="cbtn" style="font-size: 24px; color: blue; font-weight:bold;">S T A R</a>
+          </div>
+          <div id="mainListDiv" class="main_list">
+              <ul class="navlinks">
+                  <li><a href="destination.html" class="cbtn" style="font-size: 22px;">Destinations</a></li>
+                  <li><a href="explore.html" class="cbtn" style="font-size: 22px;">Explore</a></li>
+                  <li><a href="more.html" class="cbtn" style="font-size: 22px;">More</a></li>
+              
+              </ul>
+          </div>
+          <span class="navTrigger cbtn" id="tbtn">
+              <i class="cbtn"></i>
+              <i class="cbtn"></i>
+              <i class="cbtn"></i>
+          </span>
+      </div>
+  </nav>
+  <!-------- Solar Model ---------->
+  <audio id="Test_Audio" autoplay loop>
+    <source src="solar.mp3" type="audio/mpeg">
+  </audio>
+  
+
+    <div id="navbar" class="hide-ctrl">
+      <a id="toggle-data" class="cbtn" href="#data"><i class="icon-data"></i> &#9788; </a>
+      
+      <a id="toggle-controls" class="cbtn" href="#controls"><i class="icon-controls"></i> &#10009; </a>
+    </div>
+    <div id="data">
+      <a class="sun cbtn" title="sun" href="#sunspeed">Sun</a>
+      <a class="mercury cbtn" title="mercury" href="#mercuryspeed">Mercury</a>
+      <a class="venus cbtn" title="venus" href="#venusspeed">Venus</a>
+      <a class="earth active cbtn" title="earth" href="#earthspeed">Earth</a>
+      <a class="mars cbtn" title="mars" href="#marsspeed">Mars</a>
+      <a class="jupiter cbtn" title="jupiter" href="#jupiterspeed">Jupiter</a>
+      <a class="saturn cbtn" title="saturn" href="#saturnspeed">Saturn</a>
+      <a class="uranus cbtn" title="uranus" href="#uranusspeed">Uranus</a>
+      <a class="neptune cbtn" title="neptune" href="#neptunespeed">Neptune</a>
+    </div>
+    <div id="controls">
+      <label class="set-view">
+        <input type="checkbox" class="cbtn">
+      </label>
+      <label class="set-zoom">
+        <input type="checkbox" class="cbtn">
+      </label>
+      <label>
+        <input type="radio" class="set-speed cbtn" name="scale" checked>
+        <span>Speed</span>
+      </label>
+      <label>
+        <input type="radio" class="set-size cbtn" name="scale">
+        <span>Size</span>
+      </label>
+      <label>
+        <input type="radio" class="set-distance cbtn" name="scale">
+        <span>Distance</span>
+      </label>
+    </div>
+    <div id="universe" class="scale-stretched">
+      <div id="galaxy">
+        <div id="solar-system" class="earth">
+          <div id="mercury" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>Mercury</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="venus" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>Venus</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="earth" class="orbit">
+            <div class="pos">
+              <div class="orbit">
+                <div class="pos">
+                  <div class="moon"></div>
+                </div>
+              </div>
+              <div class="planet">
+                <dl class="infos">
+                  <dt>Earth</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="mars" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>Mars</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="jupiter" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>Jupiter</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="saturn" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <div class="ring"></div>
+                <dl class="infos">
+                  <dt>Saturn</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="uranus" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>Uranus</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="neptune" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>Neptune</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="sun">
+            <dl class="infos">
+              <dt>Sun</dt>
+              <dd><span></span></dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    if (typeof jQuery == 'undefined') { 
+      document.write(unescape("%3Cscript src='js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+    }
+  </script>
+  <script type="text/javascript">
+    let gfg = document.getElementById("Test_Audio");
+    gfg.play();
+
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) {
+       
+       // tab is changed
+      let gfg = document.getElementById("Test_Audio");
+      gfg.pause();
+      
+    } else {
+       
+       // tab is active
+      let gfg = document.getElementById("Test_Audio");
+      gfg.play();
+    }
+ });
+
+
+   const audio = new Audio("https://www.fesliyanstudios.com/play-mp3/387");
+   const buttons = document.querySelectorAll(".cbtn");
+
+    buttons.forEach(event => {
+      event.addEventListener("click", () => {
+      audio.play();
+      });
+    }); 
+
+  
+
+    let count = 0;
+    let btn = document.getElementById("tbtn");
+    btn.onclick = function () {
+      count++;
+      
+      if (count % 2 == 0) {
+        document.getElementById("navbar").style.display = "block";
+        document.getElementById("data").style.display = "block";
+        document.getElementById("controls").style.display = "block";
+    } else {
+      document.getElementById("navbar").style.display = "none";
+      document.getElementById("data").style.display = "none";
+      document.getElementById("controls").style.display = "none";
+    }
+}
+
+  </script>
+  <script>
+    $(window).scroll(function() {
+      if ($(document).scrollTop() > 50) {
+          $('.nav').addClass('affix');
+          console.log("OK");
+      } else {
+          $('.nav').removeClass('affix');
+      }
+  });
+
+
+    </script>
+    <script src="js/nav.js"></script>
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+  </body>
+  
+</html>
